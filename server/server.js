@@ -4,7 +4,6 @@ const http = require('http');
 
 const domains = require('./domains');
 const assets = require('./assets');
-const templates = require('./templates');
 const pages = require('./pages');
 const posts = require('./posts');
 const errors = require('./errors');
@@ -18,15 +17,14 @@ server.on('request', function (req, res) {
             assets.serve(domain, req, res);
         }
         else {
-            const template = templates.get_template(domain);
             if (pages.is(domain, req)) {
-                pages.serve(template, domain, req, res);
+                pages.serve(domain, req, res);
             }
             else if (posts.is(domain, req)) {
-                posts.serve(template, domain, req, res);
+                posts.serve(domain, req, res);
             }
             else {
-                errors.serve(404, template, domain, req, res);
+                errors.serve(404, domain, req, res);
             }
         }
     }

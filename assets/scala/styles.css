@@ -1,0 +1,158 @@
+@import url(http://fonts.googleapis.com/css?family=Neucha|Indie+Flower);
+* {
+    font-family: "Neucha", sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+body hr {
+    height: 0;
+    border: 1px dotted #ccc;
+    outline: none;
+}
+body a {
+    color: #3d4e66;
+    text-decoration: none;
+}
+#header {
+    display: block;
+}
+#header #logo {
+    display: block;
+    padding: 60px;
+    letter-spacing: -3px;
+    font-size: 72px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #5e728e;
+}
+#header #logo strong {
+    font-weight: normal;
+    color: #3d4e66;
+}
+#main {
+    display: block;
+    padding: 24px 48px;
+}
+#main .block {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 25px;
+    margin: 21px 0;
+    list-style: none;
+    font-size: 24px;
+    color: #333;
+    max-width: 30%;
+}
+#main .block li {
+    padding: 6px 0;
+}
+#main .block li a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px dotted #333;
+}
+#main .block li small {
+    color: #ccc;
+    font-size: 11px;
+}
+#main .block li.title {
+    font-weight: bold;
+    font-size: 33px;
+    cursor: default;
+}
+#main .post {
+    padding: 0 25px;
+    margin: 21px 0;
+    color: #454545;
+    font-size: 21px;
+    line-height: 33px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+#main .post a {
+    border-bottom: 1px dotted #333;
+}
+#main .post .label {
+    display: inline-block;
+    padding: 3px 6px;
+    margin-bottom: 18px;
+    font-size: 10px;
+}
+#main .post code,
+#main .post pre {
+    padding: 9px 3px;
+    font-family: "PT Mono", monospace;
+    font-size: 14px;
+    line-height: 18px;
+}
+#main .post blockquote {
+    font-family: serif;
+    font-style: italic;
+}
+#main .post .ranked_list li {
+    margin: 12px 0;
+    color: #666;
+}
+#main .post .image_list li {
+    list-style-type: none;
+    display: inline-block;
+}
+#main .post .image_list li a {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+#main .post .image_list li a img {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+#main .post .image_list li a img:hover {
+    border: 1px solid #000;
+    background: #000;
+}
+@media (max-width: 799px) {
+    #sidebar {
+        position: relative;
+        display: block;
+        vertical-align: top;
+        padding: 0;
+        margin: 0;
+    }
+    #sidebar #logo {
+        letter-spacing: -2px;
+        font-size: 48px;
+        font-weight: bold;
+    }
+    #sidebar #slogan {
+        display: none;
+    }
+    #sidebar #menu {
+        margin: 12px 6px 0 24px;
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+    #sidebar #menu li {
+        display: inline-block;
+        margin: 0 3px 0 0;
+    }
+    #sidebar #menu li a {
+        text-decoration: none;
+        color: #454545;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #main {
+        display: block;
+        vertical-align: top;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+}
