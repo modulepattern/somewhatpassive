@@ -1,6 +1,7 @@
 ## hidden
 .*
 !.gitignore
+!.editorconfig
 
 ## idea
 .idea
