@@ -1,0 +1,17 @@
+{
+  "name": "somewhatpassive",
+  "version": "1.0.0",
+  "description": "somewhat passive attempt",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sri <srirangan@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node": "5.3.0"
+  },
+  "dependencies": {
+    "lodash": "3.10.1"
+  }
+}
