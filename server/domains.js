@@ -1,5 +1,3 @@
-'use strict';
-
 const _ = require('lodash');
 
 const domains = {
@@ -12,20 +10,22 @@ const domains = {
     java: 'javabackend.com',
     php: 'phpfolks.com',
     ruby: 'rubyfolks.com',
-    js: 'jsfolks.com'
+    js: 'jsfolks.com',
+    rust: 'rustfolks.com'
 };
 
 const redirects = {
-    scala: ['scalaprogrammers.com'],
-    haskell: ['haskellprogrammers.com', 'programmershaskell.com'],
-    clojure: ['clojureprogrammers.com', 'programmersclojure.com'],
-    erlang: ['erlangprogrammers.com', 'programmerserlang.com'],
-    fsharp: ['programmersfsharp.com'],
+    scala: ['scalaprogrammers.com', 'scalafolks.com'],
+    haskell: ['haskellprogrammers.com', 'programmershaskell.com', 'haskellfolks.com'],
+    clojure: ['clojureprogrammers.com', 'programmersclojure.com', 'clojurefolks.com'],
+    erlang: ['erlangprogrammers.com', 'programmerserlang.com', 'erlangfolks.com'],
+    fsharp: ['programmersfsharp.com', 'fsharpfolks.com'],
     python: ['programmerspython.com', 'pythonfolks.com'],
     java: ['programmersjava.com', 'javaecosystem.com'],
-    php: ['programmersphp.com'],
-    ruby: ['programmersruby.com'],
-    js: ['jsecosystem.com', 'nodejsprogrammers.com', 'nodeprogrammers.com']
+    php: ['programmersphp.com', 'phpecosystem.com'],
+    ruby: ['programmersruby.com', 'rubyecosystem.com'],
+    js: ['jsecosystem.com', 'nodejsprogrammers.com', 'nodeprogrammers.com'],
+    rust: ['rustecosystem.com', 'ruststuff.com']
 };
 
 function get_domain(domain_name) {
