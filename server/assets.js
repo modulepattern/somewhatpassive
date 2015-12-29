@@ -20,7 +20,6 @@ function serve(domain, req, res) {
     const file_contents = fs.readFileSync(file_path, charset);
     const text_extensions = ['html', 'css', 'js', 'svg', 'md', 'txt'];
     const is_text = text_extensions.indexOf(extension) > -1;
-    console.log(path.basename(file_path), content_type, charset, extension, is_text);
     if (is_text) {
         res.end(file_contents);
     }
