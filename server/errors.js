@@ -1,3 +1,5 @@
+'use strict';
+
 const pages = require('./pages');
 
 function serve(code, domain, req, res) {
