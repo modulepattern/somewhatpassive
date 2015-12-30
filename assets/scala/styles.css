@@ -34,6 +34,18 @@ body {
     text-decoration: none;
 }
 
+.mailing_list {
+    padding: 1em;
+    margin-top: 3em;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+.mailing_list input {
+    font-size: 1em;
+    padding: 0.6em
+}
+
 .content {
     padding: 2em;
 }
