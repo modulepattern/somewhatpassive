@@ -8,12 +8,19 @@ const mime = require('mime');
 function get_file_path(domain, req) {
     return path.resolve(path.join('assets', domain, path.basename(req.url)));
 }
+
+function get_common_file_path(req) {
+    return path.resolve(path.join('assets', 'common', path.basename(req.url)));
+}
+
 function is(domain, req) {
-    return req.url !== '/' && fs.existsSync(get_file_path(domain, req));
+    return req.url !== '/' && (fs.existsSync(get_file_path(domain, req)) || fs.existsSync(get_common_file_path(req)));
 }
 
 function serve(domain, req, res) {
-    const file_path = get_file_path(domain, req);
+    const domain_file_path = get_file_path(domain, req);
+    const common_file_path = get_common_file_path(req);
+    const file_path = fs.existsSync(domain_file_path) ? domain_file_path : common_file_path;
     const content_type = mime.lookup(file_path);
     const charset = mime.charsets.lookup(content_type);
     const extension = mime.extension(content_type);
