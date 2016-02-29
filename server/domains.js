@@ -19,7 +19,8 @@ const domains = {
 
     java: 'javabackend.com',
     php: 'phpfolks.com',
-    fsharp: 'fsharpcommunity.com'
+    fsharp: 'fsharpcommunity.com',
+    csharp: 'csharpfolks.com'
 };
 
 const redirects = {
