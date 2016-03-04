@@ -1,0 +1,72 @@
+Setting up Rust development environment on Linux
+---
+<div class='post'>
+    <h1 class='title'>Setting up Rust development environment on Linux</h1>
+    <p>I use a Debian based Linux distro but the steps given below should work for a variety of Linux distros.</p>
+    <h2>Installing Rust</h2>
+    <p>There are many ways to go about installing Rust on Linux.</p>
+    <p>First, you could <a href='https://www.rust-lang.org/downloads.html' rel='nofollow'>download</a> the archive from the Rust website and add the <code>bin</code> folder to your PATH.</p>
+    <p>Second, you can use the <code>rustup</code> shell script to install the latest stable, beta or nightly version:</p>
+    <pre><code>
+        $ curl -sSf https://static.rust-lang.org/rustup.sh | sh<br/>
+        $ curl -sSf https://static.rust-lang.org/rustup.sh | sh -s -- --channel=beta<br/>
+        $ curl -sSf https://static.rust-lang.org/rustup.sh | sh -s -- --channel=nightly
+    </code></pre>
+    <p>However, my preffered way of installing Rust is to make use of the <a href='https://github.com/sdepold/rsvm' rel='nofollow'>Rust Version Manager</a>. The reason being: Rust, despite being well engineered, is a relatively new technology. In the absence of a long term stable (LTS) version (and perhaps even with an LTS), it's very likely I end up with different projects each requiring versions of Rust. This is based on my experience with Java, Scala, Python and even Node. With `rsvm` I get a tool to easily and efficiently manage and use different Rust versions.</p>
+    <pre><code>
+        # installing rust version manager
+        $ curl -L https://raw.github.com/sdepold/rsvm/master/install.sh | sh
+
+        # test rsvm
+        $ rsvm
+
+        Rust Version Manager
+        ====================
+
+        Usage:
+
+          rsvm help | --help | -h       Show this message.
+          rsvm install <version>        Download and install a <version>.
+                                        <version> could be for example "0.12.0".
+          rsvm uninstall <version>      Uninstall a <version>.
+          rsvm use <version>            Activate <version> for now and the future.
+          rsvm ls | list                List all installed versions of rust.
+          rsvm ls-remote                List remote versions available for install.
+          rsvm ls-channel               Print a channel version available for install.
+
+        # install rust
+        $ rsvm install 1.6.0
+
+        # test rustc
+        $ rustc --version
+        rustc 1.6.0 (c30b771ad 2016-01-19)
+    </code></pre>
+    <h2>Editor <strike>Wars</strike></h2>
+    <p>This is a tricky one. Everybody has a favorite editor / IDE but <em>"which one is the best?"</em> is a never-ending discussion. I don't wish to go there.</p>
+    <p>Let me just share what I use: <a href='https://www.sublimetext.com/3' rel='nofollow'>Sublime Text 3</a> with the <a href='https://github.com/rust-lang/sublime-rust' rel='nofollow'>Rust</a> plugin.</p>
+    <p>In additional to Sublime Text, <a href='https://www.rust-lang.org/ides.html' rel='nofollow'>Rust plugins and addons</a> can be found for a number of IDEs and editors including IntelliJ IDEA, Eclipse, Visual Studio, Atom, Vim, Emacs etc.</p>
+    <h2>Hello World</h2>
+    <pre><code>
+        # generate hello world with cargo
+        $ cargo new helloworld --bin
+
+        # hello world
+        $ cd helloworld
+        $ tree
+        .
+        ├── Cargo.toml
+        └── src
+            └── main.rs
+
+        $ more src/main.rs
+        fn main() {
+            println!("Hello, world!");
+        }
+
+        $ cargo run
+        Compiling helloworld v0.1.0 (file:///tmp/rust-tmp/helloworld)
+        Running `target/debug/helloworld`
+        Hello, world!
+    </code></pre>
+    <p>There you go, you have a perfectly working Rust development environment. Time to start writing some code!</p>
+</div>
