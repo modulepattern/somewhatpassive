@@ -25,7 +25,7 @@ function serve(domain, req, res) {
     const charset = mime.charsets.lookup(content_type);
     const extension = mime.extension(content_type);
     const file_contents = fs.readFileSync(file_path, charset);
-    const text_extensions = ['html', 'css', 'js', 'svg', 'md', 'txt'];
+    const text_extensions = ['html', 'css', 'js', 'svg', 'md', 'txt', 'xml'];
     const is_text = text_extensions.indexOf(extension) > -1;
     if (is_text) {
         res.end(file_contents);

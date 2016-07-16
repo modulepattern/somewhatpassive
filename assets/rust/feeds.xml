@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0'>
+
+<channel>
+    <title>Rusty Programmers</title>
+    <link>http://rustyprogrammers.com/</link>
+    <description>a place for rust programmers, technologists and enthusiasts</description>
+    <image>
+        <url>http://rustyprogrammers.com/icon.png</url>
+    </image>
+
+    <item>
+        <title>Rust developer setup on Linux</title>
+        <link>http://rustyprogrammers.com/2016-02-setup-dev-env-linux</link>
+        <description></description>
+    </item>
+
+    <item>
+        <title>Web Frameworks in Rust</title>
+        <link>http://rustyprogrammers.com/2016-01-web-frameworks</link>
+        <description></description>
+    </item>
+
+    <item>
+        <title>Best Rust Books for 2015</title>
+        <link>http://rustyprogrammers.com/2015-12-best-rust-books</link>
+        <description></description>
+    </item>
+
+</channel>
+
+</rss>
