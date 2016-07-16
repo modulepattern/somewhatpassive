@@ -9,10 +9,10 @@ const domains = {
     haskell: 'haskellprogrammers.com',
     rust: 'rustyprogrammers.com',
 
-    clojure: 'clojurecommunity.com',
     erlang: 'elixiroferlang.com',
     js: 'jsfolks.com',
 
+    clojure: 'clojurecommunity.com',
     perl: 'perlcommunity.com',
     swift: 'swiftobjective.com',
     ruby: 'rubyfolks.com',
@@ -30,10 +30,10 @@ const redirects = {
     haskell: ['haskellcommunity.com', 'haskellfolks.com'],
     rust: ['rustfolks.com', 'rustecosystem.com'],
 
-    clojure: ['clojureprogrammers.com', 'programmersclojure.com', 'clojurefolks.com'],
     erlang: ['erlangcommunity.com', 'erlangprogrammers.com', 'programmerserlang.com', 'erlangfolks.com'],
     js: ['jsecosystem.com', 'nodejsprogrammers.com', 'nodeprogrammers.com'],
 
+    clojure: ['clojureprogrammers.com', 'programmersclojure.com', 'clojurefolks.com'],
     perl: ['perlfolks.com'],
     swift: ['swiftfolks.com'],
     ruby: ['programmersruby.com'],
