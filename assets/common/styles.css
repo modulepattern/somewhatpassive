@@ -35,6 +35,31 @@ body {
     text-decoration: none;
 }
 
+.network {
+    font-family: 'Cabin Sketch', fantasy;
+    font-size: 1em;
+    color: #999;
+    margin: 0;
+    padding: 2em;
+    text-align: center;
+}
+
+.network .item {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.network .item .link {
+    color: #999;
+    text-decoration: none;
+}
+
+.network .item .link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
 .mailing_list {
     padding: 1em;
     margin-top: 3em;
