@@ -16,16 +16,14 @@ server.on('request', function (req, res) {
         if (assets.is(domain, req)) {
             assets.serve(domain, req, res);
         }
+        else if (pages.is(domain, req)) {
+            pages.serve(domain, req, res);
+        }
+        else if (posts.is(domain, req)) {
+            posts.serve(domain, req, res);
+        }
         else {
-            if (pages.is(domain, req)) {
-                pages.serve(domain, req, res);
-            }
-            else if (posts.is(domain, req)) {
-                posts.serve(domain, req, res);
-            }
-            else {
-                errors.serve(404, domain, req, res);
-            }
+            errors.serve(404, domain, req, res);
         }
     }
     res.end();
