@@ -10,11 +10,11 @@ const domains = {
     rust: 'rustyprogrammers.com',
 
     clojure: 'clojurecommunity.com',
-    erlang: 'erlangcommunity.com',
+    erlang: 'elixiroferlang.com',
     js: 'jsfolks.com',
 
     perl: 'perlcommunity.com',
-    swift: 'swiftfolks.com',
+    swift: 'swiftobjective.com',
     ruby: 'rubyfolks.com',
 
     java: 'javabackend.com',
@@ -31,11 +31,11 @@ const redirects = {
     rust: ['rustfolks.com', 'rustecosystem.com'],
 
     clojure: ['clojureprogrammers.com', 'programmersclojure.com', 'clojurefolks.com'],
-    erlang: ['erlangprogrammers.com', 'programmerserlang.com', 'erlangfolks.com'],
+    erlang: ['erlangcommunity.com', 'erlangprogrammers.com', 'programmerserlang.com', 'erlangfolks.com'],
     js: ['jsecosystem.com', 'nodejsprogrammers.com', 'nodeprogrammers.com'],
 
     perl: ['perlfolks.com'],
-    swift: [''],
+    swift: ['swiftfolks.com'],
     ruby: ['programmersruby.com'],
 
     java: ['programmersjava.com', 'javaecosystem.com'],
