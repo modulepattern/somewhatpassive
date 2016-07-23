@@ -4,10 +4,12 @@ const fs = require('fs');
 const path = require('path');
 
 function serve(domain, data, res) {
+    data.title = data.title.replace('\n', '');
     const base_path = path.resolve(path.join('templates', domain, 'base.html'));
     const base_exists = fs.existsSync(base_path);
     if (base_exists) {
         var html = fs.readFileSync(base_path, 'utf-8');
+        html = html.replace('{{title}}', data.title || '');
         html = html.replace('{{title}}', data.title || '');
         html = html.replace('{{content}}', data.content || '');
         res.end(html);
