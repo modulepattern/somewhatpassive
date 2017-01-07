@@ -88,10 +88,6 @@ body {
 
 .home > .featured > .link {
     color: #333;
-    text-decoration: none;
-}
-
-.home > .featured > .link:first-child {
     text-decoration: underline;
 }
 
