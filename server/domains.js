@@ -4,19 +4,18 @@ const _ = require('lodash');
 
 const domains = {
     scala: 'scalacommunity.com',
+    rust: 'rustyprogrammers.com',
 
     python: 'pythoncommunity.com',
     haskell: 'haskellprogrammers.com',
-    rust: 'rustyprogrammers.com',
 
+    react: 'reacthowto.com',
     erlang: 'elixiroferlang.com',
     js: 'jsfolks.com',
-
     clojure: 'clojurecommunity.com',
     perl: 'perlcommunity.com',
     swift: 'swiftobjective.com',
     ruby: 'rubyfolks.com',
-
     java: 'javabackend.com',
     php: 'phpfolks.com',
     fsharp: 'fsharpcommunity.com',
