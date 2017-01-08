@@ -167,10 +167,37 @@ body {
     width: 16em;
 }
 
+.post > .image_list_single {
+    list-style: none;
+    text-align: center;
+}
+
+.post > .image_list_single > .item {
+    display: inline-block;
+}
+
+.post > .image_list_single > .item > .link > .image {
+    padding: 1.5em;
+}
+
 .post > p {
     margin: 0 0.3em;
     font-size: 1.2em;
     line-height: 2.1em;
+}
+
+.post > blockquote {
+    margin: 1em 0.3em;
+    font-size: 1.2em;
+    line-height: 2.1em;
+    padding: 1em;
+    border-left: 1em solid #ccc;
+    background-color: #f0f0f0;
+}
+
+.post > blockquote > ul {
+    margin: 0;
+    list-style: square;
 }
 
 .post > h3 {
