@@ -26,9 +26,9 @@ const domains = {
 };
 
 const redirects = {
-    srirangan: ['srirangan.com']
+    srirangan: ['srirangan.com'],
 
-    generatetokens: ['generatetoken.com']
+    generatetokens: ['generatetoken.com'],
 
     scala: ['scalaprogrammers.com', 'scalafolks.com'],
     python: ['pythonfolks.com'],
