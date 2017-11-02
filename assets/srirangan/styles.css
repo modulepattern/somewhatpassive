@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #121212;
+}
+
+body {
+    background: #616262;
+    cursor: default;
+}
+
+.row {
+    display: block;
+}
+
+.row .cell {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.section {
+    padding: 6em;
+}
+
+.section .title {
+    font-size: 4.5em;
+    font-family: 'Londrina Shadow', cursive;
+    font-weight: normal;
+}
+
+.section .subtitle {
+    margin-top: 1em;
+    font-size: 3em;
+    font-weight:normal;
+}
+
+.section_header {
+    padding: 12em 6em;
+}
+
+.section_header .big {
+    font-size: 9em;
+    color: #fff;
+    font-family: 'Londrina Shadow', cursive;
+}
+
+.section_blockchains {
+    background: #C26B5F;
+}
+
+.section_products {
+    background: #F99867;
+}
+
+.section_timeline {
+    background: #F8E387;
+    font-family: sans-serif;
+}
+
+.section_timeline .timeline {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.section_timeline .timeline .row {
+    margin: 1em 0;
+}
+
+.section_timeline .timeline .range {
+    width: 15%
+}
+
+.section_timeline .timeline .details {
+    width: 80%
+}
+
+.section_connect {
+    background: #B9D694;
+}
+
+.section_connect a {
+    font-weight: bold;
+}
+
+/* -------------------------------- */
+
+@media only screen and (min-width : 320px) {
+    body {
+        font-size: 6px;
+    }
+    .section .title,
+    .section .subtitle {
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+}
+
+@media only screen and (min-width : 480px) {
+    body {
+        font-size: 9px;
+    }
+    .section .title,
+    .section .subtitle {
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    body {
+        font-size: 9px;
+    }
+    .section .title,
+    .section .subtitle {
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    body {
+        font-size: 12px;
+    }
+    .section .title,
+    .section .subtitle {
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+    body {
+        font-size: 15px;
+    }
+    .section .title,
+    .section .subtitle {
+        /*font-family: 'Londrina Shadow', cursive;*/
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+}
+
+@media only screen and (min-width : 1600px) {
+    body {
+        font-size: 18px;
+    }
+    .section .title,
+    .section .subtitle {
+        /*font-family: 'Londrina Shadow', cursive;*/
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+}

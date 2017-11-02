@@ -3,9 +3,12 @@
 const _ = require('lodash');
 
 const domains = {
+    srirangan: 'srirangan.net',
+
+    generatetokens: 'generatetokens.com',
+
     scala: 'scalacommunity.com',
     rust: 'rustyprogrammers.com',
-
     python: 'pythoncommunity.com',
     haskell: 'haskellprogrammers.com',
 
@@ -23,20 +26,21 @@ const domains = {
 };
 
 const redirects = {
-    scala: ['scalaprogrammers.com', 'scalafolks.com'],
+    srirangan: ['srirangan.com']
 
+    generatetokens: ['generatetoken.com']
+
+    scala: ['scalaprogrammers.com', 'scalafolks.com'],
     python: ['pythonfolks.com'],
     haskell: ['haskellcommunity.com', 'haskellfolks.com'],
     rust: ['rustfolks.com', 'rustecosystem.com'],
 
     erlang: ['erlangcommunity.com', 'erlangprogrammers.com', 'programmerserlang.com', 'erlangfolks.com'],
     js: ['jsecosystem.com', 'nodejsprogrammers.com', 'nodeprogrammers.com'],
-
     clojure: ['clojureprogrammers.com', 'programmersclojure.com', 'clojurefolks.com'],
     perl: ['perlfolks.com'],
     swift: ['swiftfolks.com'],
     ruby: ['programmersruby.com'],
-
     java: ['programmersjava.com', 'javaecosystem.com'],
     php: ['programmersphp.com'],
     fsharp: ['programmersfsharp.com', 'fsharpfolks.com']
