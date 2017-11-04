@@ -95,7 +95,7 @@ function get_domain_or_redirect(req, res) {
     if (!domain) {
         var redirect = get_redirect(domain_name);
         if (redirect) {
-            redirect = sub_domain + '.' + redirect + ':5004';
+            redirect = redirect;
             res.statusCode = 302;
             res.setHeader('Location', '//' + redirect + req.url);
             domain = null;
