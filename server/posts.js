@@ -7,7 +7,7 @@ const templates = require('./templates');
 
 function get_file_path(req, domain) {
     var file = req.url === '/' ? '/home.html' : req.url + '.html';
-    return path.resolve(path.join('content', domain, 'posts', file));
+    return path.resolve(path.join('domains', domain, 'posts', file));
 }
 
 function is(domain, req) {

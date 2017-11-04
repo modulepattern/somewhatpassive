@@ -6,11 +6,11 @@ const path = require('path');
 const mime = require('mime');
 
 function get_file_path(domain, req) {
-    return path.resolve(path.join('assets', domain, path.basename(req.url)));
+    return path.resolve(path.join('domains', domain, 'assets', path.basename(req.url)));
 }
 
 function get_common_file_path(req) {
-    return path.resolve(path.join('assets', 'common', path.basename(req.url)));
+    return path.resolve(path.join('domains', 'common', 'assets', path.basename(req.url)));
 }
 
 function is(domain, req) {

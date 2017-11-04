@@ -3,47 +3,45 @@
 const _ = require('lodash');
 
 const domains = {
+    defense: 'defense19.com',
+    generatetokens: 'generatetokens.com',
+    haskell: 'haskellprogrammers.com',
+    python: 'pythoncommunity.com',
+    rust: 'rustyprogrammers.com',
+    scala: 'scalacommunity.com',
     srirangan: 'srirangan.net',
 
-    generatetokens: 'generatetokens.com',
-
-    scala: 'scalacommunity.com',
-    rust: 'rustyprogrammers.com',
-    python: 'pythoncommunity.com',
-    haskell: 'haskellprogrammers.com',
-
-    react: 'reacthowto.com',
-    erlang: 'elixiroferlang.com',
-    js: 'jsfolks.com',
-    clojure: 'clojurecommunity.com',
-    perl: 'perlcommunity.com',
-    swift: 'swiftobjective.com',
-    ruby: 'rubyfolks.com',
-    java: 'javabackend.com',
-    php: 'phpfolks.com',
-    fsharp: 'fsharpcommunity.com',
-    csharp: 'csharpfolks.com'
+    // react: 'reacthowto.com',
+    // erlang: 'elixiroferlang.com',
+    // js: 'jsfolks.com',
+    // clojure: 'clojurecommunity.com',
+    // perl: 'perlcommunity.com',
+    // swift: 'swiftobjective.com',
+    // ruby: 'rubyfolks.com',
+    // java: 'javabackend.com',
+    // php: 'phpfolks.com',
+    // fsharp: 'fsharpcommunity.com',
+    // csharp: 'csharpfolks.com',
 };
 
 const redirects = {
+    defense: ['defence19.com', 'india-defence.com'],
+    generatetokens: ['generatetoken.com'],
+    haskell: ['haskellcommunity.com', 'haskellfolks.com'],
+    python: ['pythonfolks.com'],
+    rust: ['rustfolks.com', 'rustecosystem.com'],
+    scala: ['scalaprogrammers.com', 'scalafolks.com'],
     srirangan: ['srirangan.com'],
 
-    generatetokens: ['generatetoken.com'],
-
-    scala: ['scalaprogrammers.com', 'scalafolks.com'],
-    python: ['pythonfolks.com'],
-    haskell: ['haskellcommunity.com', 'haskellfolks.com'],
-    rust: ['rustfolks.com', 'rustecosystem.com'],
-
-    erlang: ['erlangcommunity.com', 'erlangprogrammers.com', 'programmerserlang.com', 'erlangfolks.com'],
-    js: ['jsecosystem.com', 'nodejsprogrammers.com', 'nodeprogrammers.com'],
-    clojure: ['clojureprogrammers.com', 'programmersclojure.com', 'clojurefolks.com'],
-    perl: ['perlfolks.com'],
-    swift: ['swiftfolks.com'],
-    ruby: ['programmersruby.com'],
-    java: ['programmersjava.com', 'javaecosystem.com'],
-    php: ['programmersphp.com'],
-    fsharp: ['programmersfsharp.com', 'fsharpfolks.com']
+    // erlang: ['erlangcommunity.com', 'erlangprogrammers.com', 'programmerserlang.com', 'erlangfolks.com'],
+    // js: ['jsecosystem.com', 'nodejsprogrammers.com', 'nodeprogrammers.com'],
+    // clojure: ['clojureprogrammers.com', 'programmersclojure.com', 'clojurefolks.com'],
+    // perl: ['perlfolks.com'],
+    // swift: ['swiftfolks.com'],
+    // ruby: ['programmersruby.com'],
+    // java: ['programmersjava.com', 'javaecosystem.com'],
+    // php: ['programmersphp.com'],
+    // fsharp: ['programmersfsharp.com', 'fsharpfolks.com']
 };
 
 function get_domain(domain_name) {
