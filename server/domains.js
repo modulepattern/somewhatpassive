@@ -31,7 +31,7 @@ const redirects = {
     python: ['pythonfolks.com'],
     rust: ['rustfolks.com', 'rustecosystem.com'],
     scala: ['scalaprogrammers.com', 'scalafolks.com'],
-    srirangan: ['srirangan.com'],
+    srirangan: ['srirangan.com', 'review19.com'],
 
     // erlang: ['erlangcommunity.com', 'erlangprogrammers.com', 'programmerserlang.com', 'erlangfolks.com'],
     // js: ['jsecosystem.com', 'nodejsprogrammers.com', 'nodeprogrammers.com'],
