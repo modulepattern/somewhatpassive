@@ -26,7 +26,7 @@ const domains = {
 
 const redirects = {
     defense: ['defence19.com', 'india-defence.com'],
-    generatetokens: ['generatetoken.com'],
+    generatetokens: ['generatetoken.com', 'productmake.rs'],
     haskell: ['haskellcommunity.com', 'haskellfolks.com'],
     python: ['pythonfolks.com'],
     rust: ['rustfolks.com', 'rustecosystem.com'],
