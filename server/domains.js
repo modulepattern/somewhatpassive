@@ -45,7 +45,7 @@ const redirects = {
 };
 
 function get_domain(domain_name) {
-    var domain;
+    let domain;
     for (const key in domains) {
         if (domains.hasOwnProperty(key)) {
             const value = domains[key];
@@ -59,11 +59,11 @@ function get_domain(domain_name) {
 }
 
 function get_redirect(domain_name) {
-    var domain;
+    let domain;
     for (const key in redirects) {
         if (redirects.hasOwnProperty(key)) {
             const redirect_domains = redirects[key];
-            var redirect_domain;
+            let redirect_domain;
             for (var i = 0; i < redirect_domains.length; i++) {
                 if (domain_name === redirect_domains[i]) {
                     redirect_domain = redirect_domains[i];
@@ -86,21 +86,17 @@ function get_default() {
 function get_domain_or_redirect(req, res) {
     const hostname = req.headers.host.split(':')[0];
     const hostname_split = hostname.split('.');
-    const sub_domain = hostname_split.slice(0, hostname_split.length - 2).join('.');
     const domain_name = hostname_split.slice(-2).join('.');
-    var domain = get_domain(domain_name);
+    let domain = get_domain(domain_name);
 
     if (!domain) {
-        var redirect = get_redirect(domain_name);
+        const redirect = get_redirect(domain_name);
         if (redirect) {
-            redirect = redirect;
             res.statusCode = 302;
             res.setHeader('Location', '//' + redirect + req.url);
             domain = null;
         }
-        else {
-            domain = get_default(req);
-        }
+        else domain = get_default(req);
     }
     return domain;
 }
