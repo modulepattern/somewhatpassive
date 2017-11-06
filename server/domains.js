@@ -3,7 +3,7 @@
 const _ = require('lodash');
 
 const domains = {
-    defense: 'defense19.com',
+    defense: 'india-defence.com',
     generatetokens: 'generatetokens.com',
     haskell: 'haskellprogrammers.com',
     python: 'pythoncommunity.com',
@@ -25,12 +25,12 @@ const domains = {
 };
 
 const redirects = {
-    defense: ['defence19.com', 'india-defence.com'],
+    defense: ['defence19.com', 'defense19.com'],
     generatetokens: ['generatetoken.com', 'productmake.rs'],
-    haskell: ['haskellcommunity.com', 'haskellfolks.com'],
-    python: ['pythonfolks.com'],
-    rust: ['rustfolks.com', 'rustecosystem.com'],
-    scala: ['scalaprogrammers.com', 'scalafolks.com'],
+    haskell: [],
+    python: [],
+    rust: [],
+    scala: [],
     srirangan: ['srirangan.com', 'review19.com'],
 
     // erlang: ['erlangcommunity.com', 'erlangprogrammers.com', 'programmerserlang.com', 'erlangfolks.com'],
