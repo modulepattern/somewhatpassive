@@ -3,6 +3,7 @@
 const _ = require('lodash');
 
 const domains = {
+    trainnetwork: 'train.network',
     defense: 'india-defence.com',
     generatetokens: 'generatetokens.com',
     haskell: 'haskellprogrammers.com',
