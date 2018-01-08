@@ -13,17 +13,27 @@ body {
     color: #ccc;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .hero {
-    text-align: center;
-    margin: 6rem 0 0 0;
+    margin: 7.5rem 0 0 0;
 }
 
 .hero .title {
     font-size: 6rem;
+    line-height: 6rem;
 }
 
 .hero .message {
+    margin-top: 1.5rem;
     font-size: 2rem;
+    line-height: 2rem;
+}
+
+
+.hero .countdown {
+    margin-top: 2.4rem;
+    font-size: 2rem;
+    line-height: 2rem;
 }
