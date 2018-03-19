@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const mime = require('mime');
 
-const get_file_path = (domain, req) => path.resolve(path.join('domains', domain, 'assets', path.basename(req.url)))
+const get_file_path = (domain, req) => path.resolve(path.join('domains', domain, 'assets', path.basename(req.url)));
 
 const get_common_file_path = req => path.resolve(path.join('domains', 'common', 'assets', path.basename(req.url)));
 
