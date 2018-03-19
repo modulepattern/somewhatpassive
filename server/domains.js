@@ -7,6 +7,8 @@ const domains = {
     defense: 'india-defence.com',
     generatetokens: 'generatetokens.com',
     srirangan: 'srirangan.net',
+    modulepattern: 'modulepattern.com',
+    servetoken: 'servetoken.com',
 };
 
 const redirects = {
