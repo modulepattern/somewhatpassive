@@ -1,9 +1,7 @@
-'use strict';
-
 const fs = require('fs');
 const path = require('path');
 
-function serve(domain, data, res) {
+module.exports.serve = (domain, data, res) => {
     data.title = data.title.replace('\n', '');
     const base_path = path.resolve(path.join('domains', domain, 'templates', 'base.html'));
     const base_exists = fs.existsSync(base_path);
@@ -15,6 +13,4 @@ function serve(domain, data, res) {
         res.end(html);
     }
     else res.end(data.content || '');
-}
-
-module.exports.serve = serve;
+};

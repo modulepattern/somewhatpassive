@@ -1,230 +1,40 @@
-@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch|Open+Sans);
-
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    background: #fff url(/icon.png) no-repeat top right;
-    background-size: 64px 64px;
-}
-
-.header {
-    padding: 2em;
-}
-
-.footer {
-    padding: 2em;
-    font-size: 0.9em;
-    line-height: 1.8em;
-    color: #999;
-}
-
-.footer > .link {
-    color: #666;
-}
-
-.header > .logo {
-    font-family: 'Cabin Sketch', fantasy;
-    font-size: 3.6em;
+    background: #fff;
     color: #333;
-    text-decoration: none;
-}
-
-.network {
-    font-family: 'Cabin Sketch', fantasy;
-    font-size: 1em;
-    color: #999;
     margin: 0;
-    padding: 2em;
+    padding: 0;
     text-align: center;
 }
 
-.network .item {
-    list-style: none;
-    display: inline-block;
-    margin-right: 1em;
+.hero {
+    margin: 7.5rem 0 0 0;
 }
 
-.network .item .link {
-    color: #999;
-    text-decoration: none;
+.hero .title {
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 700;
 }
 
-.network .item .link:hover {
-    color: #333;
-    text-decoration: underline;
+.hero .message {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
 }
 
-.mailing_list {
-    padding: 1em;
-    margin-top: 3em;
-    background-color: lightgoldenrodyellow;
-    text-align: center;
-}
 
-.mailing_list input {
-    font-size: 1em;
-    padding: 0.6em
-}
-
-.content {
-    padding: 2em;
-}
-
-.home {
-}
-
-.home > .featured {
-    margin: 0 0 2em 0;
-    font-size: 1.5em;
-    line-height: 2.1em;
-    color: #666;
-}
-
-.home > .featured > .link {
-    color: #333;
-    text-decoration: underline;
-}
-
-.home > .posts {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.home > .posts > .item {
-    padding: 0.6em 0;
-    font-size: 1.5em;
-}
-
-.home > .posts > .item > .date {
-    display: inline-block;
-    color: #ccc;
-    margin-right: 1em;
-}
-
-.home > .posts > .item > .link {
-    text-decoration: underline;
-    color: #333;
-}
-
-.post {
-}
-
-.post > .title {
-    margin: 0 0 0.3em 0;
-    padding: 0;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3em;
-    letter-spacing: -0.05em;
-    color: #333;
-}
-
-.post > .book_list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 1.2em;
-    line-height: 2.1em;
-    display: inline-block;
-    width: 60%;
-    vertical-align: top;
-}
-
-.post > .book_list > .item {
-    margin: 0.9em 0.3em;
-    color: #666;
-}
-
-.post > .book_list > .item > .title {
-}
-
-.post > .book_list > .item > .title > .link {
-    color: #333;
-}
-
-.post > .image_list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    width: 39%;
-    vertical-align: top;
-}
-
-.post > .image_list > .item {
-    display: inline-block;
-}
-
-.post > .image_list > .item > .link > .image {
-    padding: 1.5em;
-    width: 16em;
-}
-
-.post > .image_list_single {
-    list-style: none;
-    text-align: center;
-}
-
-.post > .image_list_single > .item {
-    display: inline-block;
-}
-
-.post > .image_list_single > .item > .link > .image {
-    padding: 1.5em;
-}
-
-.post > p {
-    margin: 0 0.3em;
-    font-size: 1.2em;
-    line-height: 2.1em;
-}
-
-.post > blockquote {
-    margin: 1em 0.3em;
-    font-size: 1.2em;
-    line-height: 2.1em;
-    padding: 1em;
-    border-left: 1em solid #ccc;
-    background-color: #f0f0f0;
-}
-
-.post > blockquote > ul {
-    margin: 0;
-    list-style: square;
-}
-
-.post > h3 {
-    margin: 0.9em 0.3em 0.3em 0.3em;
-    font-size: 1.5em;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-    body {
-        font-size: 9px;
-    }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    body {
-        font-size: 12px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    body {
-        font-size: 15px;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1999px) {
-    body {
-        font-size: 18px;
-    }
+.hero .countdown {
+    margin-top: 2.4rem;
+    font-size: 2rem;
+    line-height: 2rem;
 }

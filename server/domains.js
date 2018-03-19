@@ -1,5 +1,3 @@
-'use strict';
-
 const _ = require('lodash');
 
 const domains = {
@@ -16,7 +14,7 @@ const redirects = {
     srirangan: ['srirangan.com'],
 };
 
-function get_domain(domain_name) {
+const get_domain = (domain_name) => {
     let domain;
     for (const key in domains) {
         if (domains.hasOwnProperty(key)) {
@@ -28,9 +26,9 @@ function get_domain(domain_name) {
         }
     }
     return domain;
-}
+};
 
-function get_redirect(domain_name) {
+const get_redirect = (domain_name) => {
     let domain;
     for (const key in redirects) {
         if (redirects.hasOwnProperty(key)) {
@@ -49,13 +47,11 @@ function get_redirect(domain_name) {
         }
     }
     return domain;
-}
+};
 
-function get_default() {
-    return 'srirangan';
-}
+const get_default = () => 'srirangan';
 
-function get_domain_or_redirect(req, res) {
+module.exports.get_domain_or_redirect = (req, res) => {
     const hostname = req.headers.host.split(':')[0];
     const hostname_split = hostname.split('.');
     const domain_name = hostname_split.slice(-2).join('.');
@@ -71,6 +67,4 @@ function get_domain_or_redirect(req, res) {
         else domain = get_default(req);
     }
     return domain;
-}
-
-module.exports.get_domain_or_redirect = get_domain_or_redirect;
+};
